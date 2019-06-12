@@ -3,7 +3,7 @@ let color = document.getElementById('color');
 
 function colorClock() {//создаем главную фугнкцию
     let time = new Date(); //навешиваем функцию, для текущего времени
-    let h = (time.getHours() % 12).toString(); // компоненты new Date()
+    let h = time.getHours().toString(); // компоненты new Date()
     let m = time.getMinutes().toString(); // toString() для того, чтобы мы ммогли использовать (length)
     let s = time.getSeconds().toString();
 
